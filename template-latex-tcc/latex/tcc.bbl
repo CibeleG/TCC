@@ -1,0 +1,121 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Aggarwal 2016]{Aggarwal2016}
+\abntrefinfo{Aggarwal}{AGGARWAL}{2016}
+{AGGARWAL, C.~C. An introduction to recommender systems.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Recommender Systems: The Textbook}.
+  Cham: Springer International Publishing, 2016. p. 1--28.
+ISBN 978-3-319-29659-3.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-3-319-29659-3\_1}.}
+
+\bibitem[Analytics 2021]{expressanalytics-cold-start-problem}
+\abntrefinfo{Analytics}{ANALYTICS}{2021}
+{ANALYTICS, E. \emph{Cold Start Problem}. 2021.
+Dispon{\'\i}vel em:
+  \url{https://www.expressanalytics.com/blog/cold-start-problem/}.}
+
+\bibitem[Chew, Haw e Subramaniam 2020]{Subramaniam}
+\abntrefinfo{Chew, Haw e Subramaniam}{CHEW; HAW; SUBRAMANIAM}{2020}
+{CHEW, L.-J.; HAW, S.-C.; SUBRAMANIAM, S. Recommender system for retail domain:
+  An insight on techniques and evaluations. In:  \emph{Proceedings of the 12th
+  International Conference on Computer Modeling and Simulation}. New York, NY,
+  USA: Association for Computing Machinery, 2020.  (ICCMS '20), p. 9–13.
+ISBN 9781450377034. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/3408066.3408101}.}
+
+\bibitem[Gunawardana, Shani e Yogev 2022]{Gunawardana2022}
+\abntrefinfo{Gunawardana, Shani e Yogev}{GUNAWARDANA; SHANI; YOGEV}{2022}
+{GUNAWARDANA, A.; SHANI, G.; YOGEV, S. Evaluating recommender systems.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Recommender Systems Handbook}. New
+  York, NY: Springer US, 2022. p. 547--601.
+ISBN 978-1-0716-2197-4.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-1-0716-2197-4\_15}.}
+
+\bibitem[Heidari, Moradi e Koochari 2022]{HEIDARI2022109835}
+\abntrefinfo{Heidari, Moradi e Koochari}{HEIDARI; MORADI; KOOCHARI}{2022}
+{HEIDARI, N.; MORADI, P.; KOOCHARI, A. An attention-based deep learning method
+  for solving the cold-start and sparsity issues of recommender systems.
+\emph{Knowledge-Based Systems}, v.~256, p. 109835, 2022.
+ISSN 0950-7051.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0950705122009339}.}
+
+\bibitem[Karatzoglou e Hidasi 2017]{Karatzoglou}
+\abntrefinfo{Karatzoglou e Hidasi}{KARATZOGLOU; HIDASI}{2017}
+{KARATZOGLOU, A.; HIDASI, B. Deep learning for recommender systems. In:
+  \emph{Proceedings of the Eleventh ACM Conference on Recommender Systems}. New
+  York, NY, USA: Association for Computing Machinery, 2017.  (RecSys '17), p.
+  396–397.
+ISBN 9781450346528. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/3109859.3109933}.}
+
+\bibitem[Kingma et al. 2016]{kingma2016improving}
+\abntrefinfo{Kingma et al.}{KINGMA et al.}{2016}
+{KINGMA, D.~P. et al. Improving variational inference with inverse
+  autoregressive flow. In:  \emph{Advances in Neural Information Processing
+  Systems}. [S.l.: s.n.], 2016. p. 4743--4751.}
+
+\bibitem[Konstan e Riedl 2012]{deconstructing-recommender-systems}
+\abntrefinfo{Konstan e Riedl}{KONSTAN; RIEDL}{2012}
+{KONSTAN, J.~A.; RIEDL, J. \emph{DECONSTRUCTING RECOMMENDER SYSTEMS}. 2012.
+Dispon{\'\i}vel em:
+  \url{https://spectrum.ieee.org/deconstructing-recommender-systems}.}
+
+\bibitem[Lakehouse 2023]{perspectiva-dados-IA-2023}
+\abntrefinfo{Lakehouse}{LAKEHOUSE}{2023}
+{LAKEHOUSE, D. \emph{Perspectiva de dados + IA 2023}. 2023.
+Dispon{\'\i}vel em:
+  \url{https://www.databricks.com/br/resources/ebook/state-of-data-ai?scid=7018Y000001Fi0cQAC&utm\_medium=paid+search&utm\_source=google&utm\_campaign=20613856686&utm\_adgroup=152642604685&utm\_content=ebook&utm\_offer=state-of-data-ai&utm\_ad=676095019567&utm\_term=ia\%20databricks&gad\_source=1&gclid=CjwKCAiAi6uvBhADEiwAWiyRdhu4vCcRtEYsvjz\_adMw9KeOlNlakog84AuYZQL8vwEIoNOzB1M97hoC2boQAvD\_BwE}.}
+
+\bibitem[Lomonaco 2019]{lomonaco2019continual}
+\abntrefinfo{Lomonaco}{LOMONACO}{2019}
+{LOMONACO, V. Continual learning with deep architectures.
+alma, 2019.}
+
+\bibitem[Minayo e Sanches 1993]{minayo1993}
+\abntrefinfo{Minayo e Sanches}{MINAYO; SANCHES}{1993}
+{MINAYO, M. C. d.~S.; SANCHES, O. Quantitativo - qualitativo: Oposição ou
+  complementaridade?
+\emph{Cadernos de Saúde Pública}, v.~9, n.~3, p. 239--262, 1993.}
+
+\bibitem[Mishra et al. 2021]{Mishra_2021}
+\abntrefinfo{Mishra et al.}{MISHRA et al.}{2021}
+{MISHRA, N. et al. Research problems in recommender systems.
+\emph{Journal of Physics: Conference Series}, IOP Publishing, v.~1717, n.~1, p.
+  012002, jan 2021.
+Dispon{\'\i}vel em: \url{https://dx.doi.org/10.1088/1742-6596/1717/1/012002}.}
+
+\bibitem[Suleimenov et al. 2020]{Suleimenov}
+\abntrefinfo{Suleimenov et al.}{SULEIMENOV et al.}{2020}
+{SULEIMENOV, I.~E. et al. Artificial intelligence: what is it? In:
+  \emph{Proceedings of the 2020 6th International Conference on Computer and
+  Technology Applications}. New York, NY, USA: Association for Computing
+  Machinery, 2020.  (ICCTA '20), p. 22–25.
+ISBN 9781450377492. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/3397125.3397141}.}
+
+\bibitem[Yan et al. 2015]{10.1145/2783258.2783270}
+\abntrefinfo{Yan et al.}{YAN et al.}{2015}
+{YAN, F. et al. Performance modeling and scalability optimization of
+  distributed deep learning systems. In:  \emph{Proceedings of the 21th ACM
+  SIGKDD International Conference on Knowledge Discovery and Data Mining}. New
+  York, NY, USA: Association for Computing Machinery, 2015.  (KDD '15), p.
+  1355–1364.
+ISBN 9781450336642. Dispon{\'\i}vel em:
+  \url{https://doi.org/10.1145/2783258.2783270}.}
+
+\bibitem[Zhang et al. 2019]{Zhang_Survey}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2019}
+{ZHANG, S. et al. Deep learning based recommender system: A survey and new
+  perspectives.
+\emph{ACM Comput. Surv.}, Association for Computing Machinery, New York, NY,
+  USA, v.~52, n.~1, feb 2019.
+ISSN 0360-0300.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3285029}.}
+
+\end{thebibliography}
