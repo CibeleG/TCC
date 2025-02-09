@@ -10,18 +10,18 @@ const NewRecommendation = () => {
 
   useEffect(() => {
     const storedUserId = localStorage.getItem('user_id');
-    // if (!storedUserId) {
-    //   // Redireciona para o login se o user_id não estiver no localStorage
-    //   router.push('/');
-    // } else {
-    //   setUserId(storedUserId);
     const storedStatus = localStorage.getItem('status');
-    if (data.status === 'novo') {
-      fetchNewUserRecommendations(storedUserId)
-    } else if (data.status === 'existente') {
-      fetchOldUserRecommendations(storedUserId)
+    if (!storedUserId) {
+      // Redireciona para o login se o user_id não estiver no localStorage
+      router.push('/');
+    } else {
+      setUserId(storedUserId);
+      if (storedStatus === 'novo') {
+        fetchNewUserRecommendations(storedUserId)
+      } else if (storedStatus === 'existente') {
+        fetchOldUserRecommendations(storedUserId)
+      }
     }
-    // }
   }, [router]);
 
   const fetchNewUserRecommendations = async (userId) => {
@@ -37,7 +37,7 @@ const NewRecommendation = () => {
 
       if (response.ok) {
         const data = await response.json();
-        setRecommendations(data.result);
+        processRecommendations(data.result);
       } else {
         console.error('Falha na requisição');
       }
@@ -57,7 +57,7 @@ const NewRecommendation = () => {
 
       if (response.ok) {
         const data = await response.json();
-        setRecommendations(data.result);
+        processRecommendations(data.result);
       } else {
         console.error('Falha na requisição');
       }
