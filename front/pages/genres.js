@@ -83,8 +83,8 @@ const Genres = () => {
         const data = await response.json();
         console.log('Gêneros enviados com sucesso:', data);
 
-        // Redirecionar para a página de newRecommendation
-        router.push('/newRecommendation');
+        // Redirecionar para a página de recomendação
+        router.push('/recommendation');
       } else {
         console.error('Falha na requisição');
       }
