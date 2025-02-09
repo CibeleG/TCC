@@ -27,7 +27,7 @@ const Login = () => {
         }
 
         // Redirecionar com base no status retornado
-        localStorage.setItem('status', data.starus);
+        localStorage.setItem('status', data.status);
         if (data.status === 'novo') {
           router.push('/genres');
         } else if (data.status === 'existente') {

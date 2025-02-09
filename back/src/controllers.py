@@ -1,14 +1,8 @@
 import os
 import logging
-import uuid
-import pandas as pd
 from models import User, Recommendation, Movie
 from utils import default_datetime
 from exceptions import UserNotFound, RecommendationNotFound
-from settings import settings
-import numpy as np
-from keras.models import load_model
-import joblib
 from recommender import CNNRecommender, ColaborativeFilteringRecommender
 
 # Os arquivos cf_model.joblib, cnn_model.h5, user_map.pkl, movie_map.pkl não foram carregados por 
@@ -21,16 +15,9 @@ cnn_model = os.path.join(current_dir, "cnn_model.h5")
 user_map = os.path.join(current_dir, "user_map.pkl")
 movie_map = os.path.join(current_dir, "movie_map.pkl")
 
-# cf_model = joblib.load(cf_model_path)
-
 cf_model = ColaborativeFilteringRecommender(cf_model_path=cf_model, user_map_path=user_map, movie_map_path=movie_map)
 recommender = CNNRecommender(cf_model, cnn_model_path=cnn_model, user_map_path=user_map, movie_map_path=movie_map)
 
-# Inicializando o recomendador com o modelo de filtro colaborativo
-# recommender = CNNRecommender(cf_model, train_data)
-
-# Carregar o modelo CNN treinado
-# recommender.cnn_model = load_model(cnn_model_path)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -45,7 +32,7 @@ class UserController:
                 status = "existente"
         except UserNotFound:
             user = UserController.create_user(payload)
-        return {"status": status, "user_id": user}
+        return {"status": status, "user_id": user["_id"]}
 
     @staticmethod
     def create_user(user):

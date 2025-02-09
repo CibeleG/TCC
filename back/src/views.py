@@ -1,7 +1,7 @@
 import logging
 from flask import Blueprint, request, jsonify
-from controllers import SRController, RecommendationController, UserController
-from exceptions import UserNotFound, RecommendationNotFound
+from controllers import SRController, UserController
+from exceptions import UserNotFound
 
 bp = Blueprint("transference", __name__)
 
@@ -38,7 +38,7 @@ def update_genres(user_id):
     try:
         payload = request.get_json()
         user_id = UserController.update_user_genres(payload["genres"], user_id)
-        return jsonify({"status": "success", "message": f"Usuário atualizado com sucesso.", "user_id": user})
+        return jsonify({"status": "success", "message": f"Usuário atualizado com sucesso.", "user_id": user_id})
     except Exception as e:
         logger.error(f"Error: {str(e)}")
         return jsonify({"status": 400, "message": str(e)}), 400

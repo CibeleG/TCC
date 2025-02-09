@@ -29,18 +29,18 @@ const Genres = () => {
   const [userId, setUserId] = useState(null); // Usado para armazenar o user_id
   const router = useRouter();
 
-//   useEffect(() => {
-//     if (typeof window !== "undefined") {
-//       // Garantir que o código só execute no lado do cliente
-//       const storedUserId = localStorage.getItem('user_id');
-//       if (storedUserId) {
-//         setUserId(storedUserId);
-//       } else {
-//         // Se o user_id não estiver no localStorage, redireciona para o login
-//         router.push('/');
-//       }
-//     }
-//   }, [router]);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Garantir que o código só execute no lado do cliente
+      const storedUserId = localStorage.getItem('user_id');
+      if (storedUserId) {
+        setUserId(storedUserId);
+      } else {
+        // Se o user_id não estiver no localStorage, redireciona para o login
+        router.push('/');
+      }
+    }
+  }, [router]);
 
   const handleChange = (genre) => {
     setSelectedGenres((prevGenres) => {
@@ -69,7 +69,7 @@ const Genres = () => {
       const genreObject = genresList.find((g) => g.pt === genre);
       return genreObject ? genreObject.en : genre;
     });
-
+    
     try {
       const response = await fetch(`http://127.0.0.1:5010/genres/${userId}`, {
         method: 'POST',
@@ -78,7 +78,6 @@ const Genres = () => {
         },
         body: JSON.stringify({ genres: genresInEnglish }), // Envia os gêneros em inglês para o backend
       });
-
       if (response.ok) {
         const data = await response.json();
         console.log('Gêneros enviados com sucesso:', data);

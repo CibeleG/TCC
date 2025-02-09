@@ -6,19 +6,22 @@ const OMDB_API_KEY = '7e322e72';
 const NewRecommendation = () => {
   const [recommendations, setRecommendations] = useState([]);
   const [movieImages, setMovieImages] = useState({});
+  const [userId, setUserId] = useState(null);
+  const [status, setStatus] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
     const storedUserId = localStorage.getItem('user_id');
     const storedStatus = localStorage.getItem('status');
+    setStatus(storedStatus);
     if (!storedUserId) {
       // Redireciona para o login se o user_id não estiver no localStorage
       router.push('/');
     } else {
       setUserId(storedUserId);
-      if (storedStatus === 'novo') {
+      if (status === 'novo') {
         fetchNewUserRecommendations(storedUserId)
-      } else if (storedStatus === 'existente') {
+      } else if (status === 'existente') {
         fetchOldUserRecommendations(storedUserId)
       }
     }
