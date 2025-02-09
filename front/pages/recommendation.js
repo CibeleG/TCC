@@ -108,7 +108,7 @@ const NewRecommendation = () => {
         {recommendations.map((movie) => (
           <div key={movie._id} style={styles.movieCard}>
             <img
-              src={movieImages[movie.title] || 'https://via.placeholder.com/150'}
+              src={movieImages[movie.title] || ''}
               alt={movie.title}
               style={styles.movieImage}
             />
@@ -123,6 +123,9 @@ const NewRecommendation = () => {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                background-color: #d5f5da;
+            }
+            body {
                 background-color: #d5f5da;
             }
             .Home_container__d256j{
@@ -148,6 +151,7 @@ const NewRecommendation = () => {
         <style jsx global>{`
             html,
             body {
+            background-color: #d5f5da;
             padding: 0;
             margin: 0;
             font-family:
@@ -177,6 +181,10 @@ const styles = {
     fontSize: '2rem',
     marginBottom: '20px',
     color: '#333',
+    marginLeft: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   grid: {
     display: 'grid',
